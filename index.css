@@ -1,61 +1,82 @@
+* {
+  box-sizing: border-box;
+}    
+
 body {
-    margin: 0;
+  margin: 0;
+  background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0px 0px 20px #242424;
 }
 
 main {
-    /* uigradients.com */
-    background: #74ebd5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #b9c4f6, #6FEAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Roboto Condensed";
-    font-style: normal;
-    font-weight: 400;
-    font-size: xx-large;
+  padding: 15px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-button {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background-color: rgb(246, 106, 46);
-    border: 2px solid rgb(193, 155, 148);
-    cursor: pointer;
-    
+div.top {
+  display: flex;
+  justify-content: space-between;
 }
 
-button:hover {
-    height: 170px;
-    width:170px;
-    border: 2px solid rgb(70, 32, 29);
-    
+h1.time {
+  text-align: center;
+  font-size: 10rem;
 }
 
-.fun {
-    /* CSS generated from https://uigradients.com */
-    background: #fc4a1a;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #f7b733, #f98a6b);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #f7b733, #f9a892); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-color: red;
+div#crypto {
+  font-size: 1.3rem;
 }
 
-h1 {
-    animation: example 5s alternate;
-    animation-iteration-count: 2;
-}
-@keyframes example {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
+div#crypto > p {
+  margin: 0;
 }
 
+div#crypto-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+div#crypto-top > span {
+  margin-left: 10px;
+}
+
+div#weather {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-self: flex-start;
+  margin-top: -20px;
+}
+
+div#weather > img {
+  width: 70px;
+}
+
+p.weather-city {
+  width: 100%;
+  text-align: right;
+  margin: 0;
+  margin-top: -10px;
+  font-size: 1.2rem;
+}
+
+p.weather-temp {
+  margin: 0;
+  font-size: 1.7rem;
+  margin-left: -10px;
+}
+
+p#author {
+  font-size: 1rem;
+}
